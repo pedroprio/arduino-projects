@@ -1,5 +1,6 @@
 #include <Adafruit_NeoPixel.h>
 #include <ESP8266WiFi.h>
+#include "arduino_secrets.h"
  
 #define PINO_LED   D1  // Pino do NodeMCU que o linha de LED está conectado
  
@@ -8,8 +9,8 @@
 Adafruit_NeoPixel strip(NUMERO_LED, PINO_LED);
  
 // Credeciais da rede WiFi
-#define WIFI_SSID "insira-o-nome-da-rede-aqui"
-#define WIFI_PASS "insira-a-senha-da-rede-aqui"
+#define WIFI_SSID SECRET_SSID
+#define WIFI_PASS SECRET_PASS
  
 void setup() 
 {
